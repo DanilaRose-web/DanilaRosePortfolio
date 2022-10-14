@@ -1,0 +1,260 @@
+.sidebar {
+   margin-left: 30px;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 2;
+   max-width: 275px;
+   min-width: 275px;
+   height: 100%;
+   overflow-y: hidden;
+   position: relative;
+   width: 100%;
+   transition: all 0.3s cubic-bezier(.16,.68,.18,1);
+}
+
+.page-blog.one-column .sidebar {
+   margin-left: 0;
+   max-width: 100%;
+   transition: all 0.3s cubic-bezier(.16,.68,.18,1);
+}
+
+.widget-content {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 120%;
+   background: #252525;
+   color: #898989;
+}
+
+/* виджет категорий */
+.widget-title {
+   padding: 17px 30px;
+   color: #FFF;
+   background-color: #1b1b1b;
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 22px;
+   line-height: 100%;
+   text-transform: uppercase;
+   
+}
+
+.category {
+   padding: 15px 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #898989;
+   display: flex;
+   width: 100%;
+}
+
+.category-list li:not(:last-child) .category {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.widget-content .name,
+.widget-content .posts-count {
+   transition: all 0.2s ease;
+}
+
+.category .posts-count {
+   color: #464646;
+}
+
+.category .name {
+   color: #898989;
+}
+
+.category:hover .name {
+   color: #01bab0;
+}
+
+.category:hover .posts-count {
+   color: #fff;
+}
+
+
+
+
+
+/* виджет постов */
+.widget-post-link {
+   position: relative;
+   display: flex;
+}
+
+.widget-post-link:not(:last-child) {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.widget-post-link article {
+   padding: 15px 30px;
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.widget-post-link .widget-article-img {
+   margin-right: 20px;
+   max-width: 58px;
+   max-height: 58px;
+   flex: 0 0 auto;
+   position: relative;
+}
+
+.widget-post-link .widget-article-img::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: 3px solid #01bab0;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(1.2);
+   transition: all 0.3s ease;
+}
+
+.widget-post-link .widget-article-img img {
+   max-width: 100%;
+   height: auto;
+}
+
+.widget-post-link .article-title {
+   color: #898989;
+   display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+   transition: all 0.3s ease;
+}
+
+.widget-post-link article:hover .article-title  {
+   color: #01bab0;
+}
+
+.widget-post-link article:hover .widget-article-img::after {
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1);
+}
+
+
+
+
+
+
+
+/* виджет текста */
+.widget-text-content {
+   padding: 15px 30px 30px 30px;
+}
+
+.widget-text-content p {
+   margin-bottom: 10px;
+   line-height: 125%;
+}
+
+.widget-text-content a {
+   display: flex;
+   align-items: center;
+   color: #898989;
+   font-weight: 600;
+   width: max-content;
+   transition: all 0.2s ease;
+}
+
+.widget-text-content a svg {
+   margin-left: 5px;
+   width: 10px;
+   height: 10px;
+   fill: #898989;
+   transition: all 0.2s ease;
+}
+
+.widget-text-content a:hover {
+   color: #fff;
+}
+
+.widget-text-content a:hover svg {
+   fill: #fff;
+}
+
+
+
+
+
+
+/* виджет последних работ */
+.widget-flickr-content {
+   padding: 20px 30px;
+}
+
+.flickr-row {
+   margin: 0 -7px;
+}
+
+.flickr-col {
+   margin: 7px 0;
+   padding: 0 7px;
+}
+
+.flickr-item {
+   position: relative;
+}
+
+.flickr-link {
+   display: flex;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transition: all 0.3s ease;
+}
+
+.flickr-link::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: rgba(37, 37, 37, 0.5);
+   transition: all 0.3s ease;
+}
+
+.flickr-link::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   border: 3px solid #01bab0;
+   background: transparent;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(1.2);
+   transition: all 0.3s ease;
+}
+
+
+.flickr-link img {
+   max-width: 100%;
+   height: auto;
+}
+
+.flickr-link:hover::before {
+   background: rgba(37, 37, 37, 0);
+}
+
+.flickr-link:hover::after {
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1);
+}
+
+@media all and (max-width: 830px) {
+   .sidebar { max-width: 100%; min-width: 100%; margin-left: 0; }
+}

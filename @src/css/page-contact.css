@@ -1,0 +1,51 @@
+.page-contact {
+   background: url('../img/dist/contact/contact-bg.webp') no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.contact-content {
+   padding: 0;
+   background: transparent;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+}
+
+
+
+.contact-info {
+   margin-top: 50px;
+   display: flex;
+   align-items: flex-start;
+}
+
+.contact-info address {
+   max-width: 290px;
+}
+
+.info-item {
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   font-weight: 900;
+   line-height: 140%;
+   color: #fff;
+   display: block;
+}
+
+a.info-item, .info-item.contact-lacation {
+   text-decoration: underline;
+   cursor: pointer;
+   transition: all 0.2s ease-out;
+}
+
+a.info-item:hover, .info-item.contact-lacation:hover {
+   color: #01bab0;
+   text-decoration: none;
+   transform: translateX(5px);
+}
+
+.info-item:not(:last-child) {
+   margin-bottom: 20px;
+}

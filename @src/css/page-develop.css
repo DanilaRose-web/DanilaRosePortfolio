@@ -1,0 +1,21 @@
+.page-develop {
+   background: url('../img/dist/develop/develop-bg.webp') no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   align-items: center;
+}
+
+.develop-category-group {
+   margin: 0 -7.5px;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.develop-category-col {
+   padding: 7.5px;
+   display: flex;
+   max-width: 25%;
+   flex: 0 0 25%;
+}
+

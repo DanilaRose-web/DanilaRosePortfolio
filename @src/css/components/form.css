@@ -1,0 +1,105 @@
+.contact-form {
+   max-width: 1000px;
+   width: 100%;
+}
+
+.inputs {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   column-gap: 30px;
+}
+
+.input-wrap {
+   margin-bottom: 10px;
+   position: relative;
+   width: 100%;
+   min-height: 70px;
+}
+
+.input-message {
+   padding-top: 7px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+   font-style: italic;
+   line-height: 90%;
+   color: red;
+   transform: translateX(10px);
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease-out;
+}
+
+input {
+   padding: 0 35px 0 15px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   height: 50px;
+   width: 100%;
+   color: #FFF;
+   background-color: transparent;
+   border: 3px solid #fff;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   transition: all 0.3s ease-out;
+}
+
+input::placeholder {
+   color: #fff;
+}
+
+textarea {
+   padding: 13px 15px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   min-height: 100px;
+   width: 100%;
+   color: #fff;
+   background-color: transparent;
+   border: 3px solid #fff;
+   border-radius: 5px;
+   transition: all 0.3s ease-out;
+}
+
+textarea::placeholder {
+   color: #fff;
+}
+
+.input-wrap svg {
+   position: absolute;
+   right: 15px;
+   top: 14px;
+   width: 22px;
+   height: 22px;
+   fill: #fff;
+   transition: all 0.3s ease-out;
+}
+
+.submit-btn {
+   max-width: 160px;
+}
+
+
+
+
+/* class error */
+.input-wrap.error input, .input-wrap.error textarea {
+   color: red;
+   border: 3px solid red;
+}
+
+.input-wrap.error input::placeholder, .input-wrap.error textarea::placeholder {
+   color: red;
+}
+
+.input-wrap.error svg {
+   fill: red;
+}
+
+.input-wrap.error .input-message {
+   opacity: 1;
+   visibility: visible;
+   transform: translateX(0);
+}

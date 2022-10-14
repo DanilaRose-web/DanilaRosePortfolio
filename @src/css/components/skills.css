@@ -1,0 +1,38 @@
+:root {
+   --value: 1%;
+}
+
+.skills {
+   width: 100%;
+}
+
+.skill:not(:last-child) {
+   margin-bottom: 15px;
+   width: 100%;
+}
+
+.skill-title {
+   margin-bottom: 10px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   font-weight: 900;
+   color: #707070;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.outside-line {
+   background: transparent;
+   border: 2px solid #fff;
+   border-radius: 3px;
+   height: 16px;
+   overflow: hidden;
+}
+
+.outside-line .inside-line {
+   background: #fff;
+   height: 100%;
+   width: 0;
+   transition: all 1.5s ease;
+}

@@ -1,0 +1,91 @@
+.page-post-single-content {
+   background: url('../img/dist/blog/blog-post12.webp') no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+
+/* описание поста */
+.post-single-title {
+   margin-bottom: 15px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 30px;
+   font-weight: 500;
+   line-height: 100%;
+   color: #fff;
+}
+
+.post-single {
+   margin-bottom: 30px;
+   padding: 30px;
+   background-color: #1F1F1D;
+}
+
+.post-text {
+   margin-bottom: 20px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 140%;
+   color: #898989;
+}
+
+.post-section-title {
+   margin: 12px 0 20px 0;
+   font-family: 'Roboto', sans-serif;
+   font-size: 24px;
+   line-height: 100%;
+   color: #fff;
+   text-align: center;
+}
+
+.post-single-img {
+   margin-bottom: 30px;
+}
+
+.post-single-img img {
+   width: 100%;
+   max-height: 400px;
+   object-fit: cover;
+}
+
+.post-blockquote {
+   margin: 40px auto;
+   padding: 15px 45px;
+   max-width: 800px;
+   background-color: #1b1b1b;
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.post-blockquote blockquote {
+   font-size: 20px;
+   color: #898989;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   line-height: 100%;
+   font-style: italic;
+   text-align: center;
+}
+
+.post-blockquote .author {
+   margin: 10px 0;
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   color: #FFF;
+}
+
+@media all and (max-width: 550px) {
+   .post-blockquote { padding: 15px 10px; }
+   .post-blockquote blockquote { font-size: 18px; }
+}
+
+
+@media all and (max-width: 450px) {
+   .post-single { padding: 30px 15px; }
+   
+   .post-single-title { font-size: calc((100vw - 280px)/(450 - 280) * (30 - 19) + 19px); }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content= />
+        <meta name="author" content= />
+        </style>
+        <!-- <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/hover-min.css"> -->
+        <link rel="stylesheet" href="lib/bootstrap-grid.min.css">
+        <!-- <link rel="stylesheet" href="lib/reset.css"> -->
+        <link rel="stylesheet" href="lib/slick/slick.css">
+        <link rel="stylesheet" href="lib/slick/slick-theme.css">
+        <link rel="stylesheet" href="lib/fonts.css">
+        <link rel="stylesheet" href="lib/lightbox.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Главная</title>
+    </head>
+    <body>
+        
+        <div class="fullscreen h100 home-fullscreen">  <!-- постоянный фон (полосы) -->
+            <div class="mobile-menu-icon">
+   <svg><use xlink:href="/img/dist/svg-sprite.svg#mobile-menu-icon"></use></svg>
+</div>
+
+            <nav class="menu fixed">
+   <div class="menu-content">
+      <div class="logo">
+         <div class="logo-img"><img src="img/dist/logo.webp" alt="Logo"></div>
+         <!-- <div class="logo-name"></div> -->
+      </div>
+   
+      <ul class="menu-list one">
+         <li><a href="/">Home</a></li>
+         <li><a href="page-about.html">About Us</a></li>
+         <li><a href="page-services.html">Services</a></li>
+         <li><a href="page-team.html">Our Team</a></li>
+         <li>
+            <a href="page-portfolio.html">Portfolio</a>
+            <ul class="menu-list__1">
+               <li><a href="page-portfolio.html">Portfolio 1</a></li>
+               <li><a href="page-portfolio.html">Portfolio 2</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="page-blog.html">Blog</a>
+            <ul class="menu-list__1">
+               <li><a href="page-blog.html">Blog 2</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="page-develop.html">Develop</a>
+            <!-- <ul class="menu-list__1">
+               <li><a href="">Hover</a></li>
+               <li><a href="">Animation</a></li>
+            </ul> -->
+         </li>
+         <li><a href="page-contact.html">Contact</a></li>
+         <li><a href="page-components.html">Components</a></li>
+      </ul>
+   
+      <div class="widget social-widget">
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#telegram"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#instagram"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#twitter"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#facebook"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#vkontakte"></use></svg></a>
+      </div>
+   
+      <div class="copyright">
+         <p>Copyright &copy; 2014 <a href="#">Danila Rose</a>. All Rights Reserved.</p>
+      </div>
+   </div>
+</nav>
+
+            <div class="slider-wrap">
+   <div class="main-slider-for">
+      <div class="slide first-slide">
+         <div class="bg-pattern"></div>
+         <div class="slide-content-wrap">
+            <div class="slide-content">
+               <h2 class="section-title main-md-title">Welcome! This is Smarty</h2>
+               <p class="section-text main-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
+               <button class="i-button main-btn">
+                  <span>Learn more</span>
+                  <svg><use xlink:href="img/dist/svg-sprite.svg#btn-arrow"></use></svg>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="slide second-slide">
+         <div class="bg-pattern"></div>
+         <div class="slide-content-wrap">
+            <div class="slide-content">
+               <h2 class="section-title main-xxl-title colorfull-title">Sale</h2>
+               <h3 class="section-subtitle main-lg-subtitle">Duis autem vel eum iriure Lorem ipsum dolor</h3>
+               <p class="section-text main-text">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.</p>
+               <button class="i-button dark main-btn">
+                  <span>Learn more</span>
+                  <svg><use xlink:href="img/dist/svg-sprite.svg#btn-arrow"></use></svg>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="slide third-slide">
+         <div class="bg-pattern"></div>
+         <div class="slide-content-wrap">
+            <div class="slide-content">
+               <h2 class="section-title main-xl-title colorfull-title">For Women</h2>
+               <h3 class="section-subtitle main-lg-subtitle">Duis autem vel eum iriure Lorem ipsum dolor</h3>
+               <button class="i-button dark main-btn">
+                  <span>Learn more</span>
+                  <svg><use xlink:href="img/dist/svg-sprite.svg#btn-arrow"></use></svg>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="slide fourth-slide">
+         <div class="bg-pattern"></div>
+         <div class="slide-content-wrap">
+            <div class="slide-content">
+               <h2 class="section-title main-xl-title">Sexy Dresses</h2>
+               <h3 class="section-subtitle main-lg-subtitle">Claritas processus</h3>
+               <button class="i-button dark main-btn">
+                  <span>Learn more</span>
+                  <svg><use xlink:href="img/dist/svg-sprite.svg#btn-arrow"></use></svg>
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- счетчик слайдера -->
+   <div class="slider-counter">
+      <div class="current-slide slider-numbers"></div> 
+      <span>/</span>
+      <div class="slide-count slider-numbers"></div>
+   </div>
+
+   <!-- slick arrows -->
+   <div class="slick-arrows"></div>
+
+   <div class="main-slider-nav">
+      <div class="slide">
+         <img src="img/dist/home-slide1.webp" alt="">
+         <div class="slide-content-wrap"></div>
+      </div>
+
+      <div class="slide">
+         <img src="img/dist/blog/blog-post6.webp" alt="">
+         <div class="slide-content-wrap"></div>
+      </div>
+         
+      <div class="slide">
+         <img src="img/dist/home-slide6.webp" alt="">
+         <div class="slide-content-wrap"></div>
+      </div>   
+      
+      <div class="slide">
+         <img src="img/dist/home-slide4.webp" alt="">
+         <div class="slide-content-wrap"></div>
+      </div>  
+   </div>
+</div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <!-- <script src="lib/jQuery-1.12.4.min.js"></script> -->
+        <script src="lib/slick/slick.min.js"></script>
+        <script type="text/javascript" src="lib/jquery.spincrement.min.js"></script>
+        <script src="lib/counter.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <script src="lib/masonry.min.js"></script>
+        <script src="https://unpkg.com/imask"></script>
+        <script src="lib/lightbox.js"></script>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

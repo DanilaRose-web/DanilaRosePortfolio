@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="page-load page-load-services">
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+        <div class="load-square load-square-services"></div>
+    </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content= />
+        <meta name="author" content= />
+        <style>
+            body {
+                overflow: hidden;
+            }
+            .page-load {
+                position: relative;
+            }
+
+            .load-square {
+                background: url('../img/dist/page-load-bg.webp') no-repeat center;
+                background-attachment: fixed;
+            }
+
+        </style>
+        <!-- <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/hover-min.css"> -->
+        <link rel="stylesheet" href="lib/bootstrap-grid.min.css">
+        <!-- <link rel="stylesheet" href="lib/reset.css"> -->
+        <link rel="stylesheet" href="lib/slick/slick.css">
+        <link rel="stylesheet" href="lib/slick/slick-theme.css">
+        <link rel="stylesheet" href="lib/fonts.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>Blog</title>
+    </head>
+    <body>
+
+        <div class="fullscreen">
+            <div class="page-content page-resize page-blog "> <!-- фон страницы  -->
+            
+                <div class="mobile-menu-icon">
+   <svg><use xlink:href="/img/dist/svg-sprite.svg#mobile-menu-icon"></use></svg>
+</div>
+                
+<nav class="menu">
+   <div class="menu-content">
+      <div class="logo">
+         <div class="logo-img"><img src="img/dist/logo.webp" alt="Logo"></div>
+         <!-- <div class="logo-name"></div> -->
+      </div>
+   
+      <ul class="menu-list one">
+         <li><a href="/">Home</a></li>
+         <li><a href="page-about.html">About Us</a></li>
+         <li><a href="page-services.html">Services</a></li>
+         <li><a href="page-team.html">Our Team</a></li>
+         <li>
+            <a href="page-portfolio.html">Portfolio</a>
+            <ul class="menu-list__1">
+               <li><a href="page-portfolio.html">Portfolio 1</a></li>
+               <li><a href="page-portfolio.html">Portfolio 2</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="page-blog.html">Blog</a>
+            <ul class="menu-list__1">
+               <li><a href="page-blog.html">Blog 2</a></li>
+            </ul>
+         </li>
+         <li>
+            <a href="page-develop.html">Develop</a>
+            <!-- <ul class="menu-list__1">
+               <li><a href="">Hover</a></li>
+               <li><a href="">Animation</a></li>
+            </ul> -->
+         </li>
+         <li><a href="page-contact.html">Contact</a></li>
+         <li><a href="page-components.html">Components</a></li>
+      </ul>
+   
+      <div class="widget social-widget">
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#telegram"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#instagram"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#twitter"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#facebook"></use></svg></a>
+         <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#vkontakte"></use></svg></a>
+      </div>
+   
+      <div class="copyright">
+         <p>Copyright &copy; 2014 <a href="#">Danila Rose</a>. All Rights Reserved.</p>
+      </div>
+   </div>
+</nav>
+
+                <div class="content blog-content">  <!-- padding: 75px -->
+                    <h1 class="section-title blog-title">Blog</h1>
+    
+                    <div class="blog-posts">
+                        <article class="blog-post animate">
+                            <div class="blog-post-col">
+                                <div class="post-img post-item">
+                                    <img src="img/dist/portfolio/portfolio-item9.webp" alt="">
+                                    
+                                    <div class="post-date">
+                                        <div class="day">27</div>
+                                        <div class="month">December</div>
+                                    </div>
+    
+                                    <div class="link-hover">
+                                        <a href="img/dist/portfolio/portfolio-item9.webp" class="lightbox-icon"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-loop"></use></svg></a>
+                                        <a href="post-single.html"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-link"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="blog-post-col">
+                                <div class="post-info post-item">
+                                    <a href="post-single.html" class="post-title">Duis autem vel eum iriure dolor in hendrerit in vulputate velit</a>
+                                    <div class="post-details">
+                                        <div class="post-detail">
+                                            <div class="detail-text">By </div>
+                                            <a href="" class="detail-link">Admin</a>
+                                            <span>/</span>
+                                        </div>
+                                        
+                                        <div class="post-detail">
+                                            <div class="detail-text">In </div>
+                                            <a href="" class="detail-link">Photo</a>
+                                            <div class="detail-text">, </div>
+                                            <a href="" class="detail-link">Photography</a>
+                                            <span>/</span>
+                                        </div>
+    
+                                        <div class="post-detail">
+                                            <div class="detail-text">Comments: </div>
+                                            <a href="" class="detail-link">25</a>
+                                        </div>
+                                    </div>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                                    <a href="post-single.html" class="i-button small transparent">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="blog-post animate">
+                            <div class="blog-post-col">
+                                <div class="post-img post-item">
+                                    <img src="img/dist/blog/blog-post1.webp" alt="">
+                                    <div class="post-date">
+                                        <div class="day">12</div>
+                                        <div class="month">April</div>
+                                    </div>
+    
+                                    <div class="link-hover">
+                                        <a href="img/dist/blog/blog-post1.webp" class="lightbox-icon"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-loop"></use></svg></a>
+                                        <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-link"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="blog-post-col">
+                                <div class="post-info post-item">
+                                    <a href="#" class="post-title">Elizabeth Olsen - small headline</a>
+                                    <div class="post-details">
+                                        <div class="post-detail">
+                                            <div class="detail-text">By </div>
+                                            <a href="" class="detail-link">Danila Rose</a>
+                                            <span>/</span>
+                                        </div>
+                                        
+                                        <div class="post-detail">
+                                            <div class="detail-text">In </div>
+                                            <a href="" class="detail-link">Elizabeth Olsen</a>
+                                            <div class="detail-text">, </div>
+                                            <a href="" class="detail-link">Photo</a>
+                                            <span>/</span>
+                                        </div>
+                                        
+                                        <div class="post-detail">
+                                            <div class="detail-text">Comments: </div>
+                                            <a href="" class="detail-link">2556</a>
+                                        </div>
+                                    </div>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <a href="" class="i-button small transparent">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="blog-post animate">
+                            <div class="blog-post-col">
+                                <div class="post-img post-item">
+                                    <img src="img/dist/blog/blog-post5.webp" alt="">
+    
+                                    <div class="post-date">
+                                        <div class="day">21</div>
+                                        <div class="month">October</div>
+                                    </div>
+    
+                                    <div class="link-hover">
+                                        <a href="img/dist/blog/blog-post5.webp" class="lightbox-icon"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-loop"></use></svg></a>
+                                        <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-link"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="blog-post-col">
+                                <div class="post-info post-item">
+                                    <a href="#" class="post-title">Big headline and very pretty, the same as the chest and face of this red-haired beauty</a>
+                                    <div class="post-details">
+                                        <div class="post-detail">
+                                            <div class="detail-text">By </div>
+                                            <a href="" class="detail-link">Administrator</a>
+                                        <span>/</span>
+    
+                                        </div>
+    
+                                        <div class="post-detail">
+                                            <div class="detail-text">In </div>
+                                            <a href="" class="detail-link">Red-haired beauties</a>
+                                            <div class="detail-text">, </div>
+                                            <a href="" class="detail-link">Photography</a>
+                                            <span>/</span>
+                                        </div>
+                                        
+                                        <div class="post-detail">
+                                            <div class="detail-text">Comments: </div>
+                                            <a href="" class="detail-link">256</a>
+                                        </div>
+                                    </div>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <a href="" class="i-button small transparent">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="blog-post animate">
+                            <div class="blog-post-col">
+                                <div class="post-img post-item">
+                                    <img src="img/dist/portfolio/portfolio-item2.webp" alt="">
+                                    <div class="post-date">
+                                        <div class="day">16</div>
+                                        <div class="month">August</div>
+                                    </div>
+    
+                                    <div class="link-hover">
+                                        <a href="img/dist/portfolio/portfolio-item2.webp" class="lightbox-icon"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-loop"></use></svg></a>
+                                        <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-link"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="blog-post-col">
+                                <div class="post-info post-item">
+                                    <a href="#" class="post-title">Big headline and very pretty, the same as the chest and face of this red-haired beauty</a>
+                                    <div class="post-details">
+                                        <div class="post-detail">
+                                            <div class="detail-text">By </div>
+                                            <a href="" class="detail-link">Administrator</a>
+                                            <span>/</span>
+                                        </div>
+                                        
+                                        <div class="post-detail">
+                                            <div class="detail-text">In </div>
+                                            <a href="" class="detail-link">Red-haired beauties</a>
+                                            <div class="detail-text">, </div>
+                                            <a href="" class="detail-link">Photography</a>
+                                            <span>/</span>
+                                        </div>
+                            
+                                        <div class="post-detail">
+                                            <div class="detail-text">Comments: </div>
+                                            <a href="" class="detail-link">256</a>
+                                        </div>
+                                    </div>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <a href="" class="i-button small transparent">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="blog-post animate">
+                            <div class="blog-post-col">
+                                <div class="post-img post-item">
+                                    <img src="img/dist/portfolio/portfolio-item1.webp" alt="">
+                                    <div class="post-date">
+                                        <div class="day">09</div>
+                                        <div class="month">November</div>
+                                    </div>
+    
+                                    <div class="link-hover">
+                                        <a href="img/dist/portfolio/portfolio-item1.webp" class="lightbox-icon"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-loop"></use></svg></a>
+                                        <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-link"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="blog-post-col">
+                                <div class="post-info post-item">
+                                    <a href="#" class="post-title">Margot Robbie reading a book by Steve Jobs</a>
+                                    <div class="post-details">
+                                        <div class="post-detail">
+                                            <div class="detail-text">By </div>
+                                            <a href="" class="detail-link">Administrator</a>
+                                            <span>/</span>
+                                        </div>
+                                       
+                                        <div class="post-detail">
+                                            <div class="detail-text">In </div>
+                                            <a href="" class="detail-link">Red-haired beauties</a>
+                                            <div class="detail-text">, </div>
+                                            <a href="" class="detail-link">Margot Robbie</a>
+                                            <span>/</span>
+                                        </div>
+                            
+                                        <div class="post-detail">
+                                            <div class="detail-text">Comments: </div>
+                                            <a href="" class="detail-link">256</a>
+                                        </div>
+                                    </div>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <a href="" class="i-button small transparent">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="blog-post animate">
+                            <div class="blog-post-col">
+                                <div class="post-img post-item">
+                                    <img src="img/dist/portfolio/portfolio-item3.webp" alt="">
+                                    <div class="post-date">
+                                        <div class="day">30</div>
+                                        <div class="month">September</div>
+                                    </div>
+    
+                                    <div class="link-hover">
+                                        <a href="img/dist/portfolio/portfolio-item3.webp" class="lightbox-icon"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-loop"></use></svg></a>
+                                        <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-link"></use></svg></a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="blog-post-col">
+                                <div class="post-info post-item">
+                                    <a href="#" class="post-title">Margot Robbie in red dress (headline test)</a>
+                                    <div class="post-details">
+                                        <div class="post-detail">
+                                            <div class="detail-text">By </div>
+                                            <a href="" class="detail-link">Administrator</a>
+                                            <span>/</span>
+                                        </div>
+                                     
+                                        <div class="post-detail">
+                                            <div class="detail-text">In </div>
+                                            <a href="" class="detail-link">Red-haired beauties</a>
+                                            <div class="detail-text">, </div>
+                                            <a href="" class="detail-link">Margot Robbie</a>
+                                            <span>/</span>
+                                        </div>
+                                        
+                                        <div class="post-detail">
+                                            <div class="detail-text">Comments: </div>
+                                            <a href="" class="detail-link">256</a>
+                                        </div>
+                                    </div>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <a href="" class="i-button small transparent">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+    
+                        <article class="blog-post animate">
+                            <div class="blog-post-col">
+                                <figure class="post-img post-item">
+                                    <img src="img/dist/portfolio/portfolio-item7.webp" alt="">
+                                    <div class="post-date">
+                                        <div class="day">31</div>
+                                        <div class="month">January</div>
+                                    </div>
+    
+                                    <div class="link-hover">
+                                        <a href="img/dist/portfolio/portfolio-item7.webp" class="lightbox-icon"><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-loop"></use></svg></a>
+                                        <a href=""><svg><use xlink:href="img/dist/svg-sprite.svg#post-hover-link"></use></svg></a>
+                                    </div>
+                                </figure>
+                            </div>
+    
+                            <div class="blog-post-col">
+                                <div class="post-info post-item">
+                                    <a href="#" class="post-title">Margot Robbie - Hot Photo</a>
+                                    <div class="post-details">
+                                        <div class="post-detail">
+                                            <div class="detail-text">By </div>
+                                            <a href="" class="detail-link">Margot Robbie</a>
+                                            <span>/</span>
+                                        </div>
+                                       
+                                        <div class="post-detail">
+                                            <div class="detail-text">In </div>
+                                            <a href="" class="detail-link">Red-haired beauties</a>
+                                            <div class="detail-text">, </div>
+                                            <a href="" class="detail-link">Helga Lovekaty</a>
+                                            <span>/</span>
+                                        </div>
+                                    
+                                        <div class="post-detail">
+                                            <div class="detail-text">Comments: </div>
+                                            <a href="" class="detail-link">256</a>
+                                        </div>
+                                    </div>
+                                    <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <a href="" class="i-button small transparent">Read More</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <aside class="sidebar">
+   <!-- виджет категорий -->
+   <div class="widget category-widget">
+      <h3 class="widget-title">CATEGORY</h3>
+      <div class="widget-content">
+         <ul class="category-list">
+            <li>
+               <a href="" class="category hover-after">
+                  <span class="name">Photography</span>
+                  <span class="posts-count">675</span>
+               </a>
+            </li>
+            
+            <li>
+               <a href="" class="category hover-after">
+                  <span class="name">Fashion style</span>
+                  <span class="posts-count">2065</span>
+               </a>
+            </li>
+
+            <li>
+               <a href="" class="category hover-after">
+                  <span class="name">Video</span>
+                  <span class="posts-count">136</span>
+               </a>
+            </li>
+
+            <li>
+               <a href="" class="category hover-after">
+                  <span class="name">Music</span>
+                  <span class="posts-count">968</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <!-- виджет постов -->
+   <div class="widget widget-posts">
+      <h3 class="widget-title">POPULAR POSTS</h3>
+      <div class="widget-content">
+         <a href="" class="widget-post-link">
+            <article>
+               <div class="widget-article-img"><img src="img/dist/blog/sidebar-post1.webp" alt="Alexandra Daddario"></div>
+               <h4 class="widget article-title">Duis autem vel eum iriure hendrerit in vulputate</h4>
+            </article>
+         </a>
+
+         <a href="" class="widget-post-link">
+            <article>
+               <div class="widget-article-img"><img src="img/dist/blog/sidebar-post2.webp" alt="Alexandra Daddario"></div>
+               <h4 class="widget article-title">Lorem ipsum dolor sit amet, consectetuer</h4>
+            </article>
+         </a>
+
+         <a href="" class="widget-post-link">
+            <article>
+               <div class="widget-article-img"><img src="img/dist/blog/sidebar-post3.webp" alt="Alexandra Daddario"></div>
+               <h4 class="widget article-title">Claritas est etiam processus dynamicus sequitur</h4>
+            </article>
+         </a>
+      </div>
+   </div>
+
+   <!-- виджет текст -->
+   <div class="widget widget-text">
+      <h3 class="widget-title">TEXT WEDGET</h3>
+      <div class="widget-content">
+         <div class="widget-text-content">
+            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes.</p>
+            <a href="#">Read More <svg><use xlink:href="img/dist/svg-sprite.svg#read-more-arrow"></use></svg> </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- виджет последних работ -->
+   <div class="widget widget-flickr">
+      <h3 class="widget-title">FLICKR WEDGET</h3>
+      <div class="widget-content">
+         <div class="widget-flickr-content">
+            <div class="row flickr-row">
+               <div class="col-4 flickr-col">
+                  <a href="" class="flickr-link"><img src="img/dist/blog/flickr-img1.webp" alt=""></a>
+               </div>
+               <div class="col-4 flickr-col">
+                  <a href="" class="flickr-link"><img src="img/dist/blog/flickr-img2.webp" alt=""></a>
+               </div>
+               <div class="col-4 flickr-col">
+                  <a href="" class="flickr-link"><img src="img/dist/blog/flickr-img3.webp" alt=""></a>
+               </div>
+               <div class="col-4 flickr-col">
+                  <a href="" class="flickr-link"><img src="img/dist/blog/flickr-img4.webp" alt=""></a>
+               </div>
+               <div class="col-4 flickr-col">
+                  <a href="" class="flickr-link"><img src="img/dist/blog/flickr-img5.webp" alt=""></a>
+               </div>
+               <div class="col-4 flickr-col">
+                  <a href="" class="flickr-link"><img src="img/dist/blog/flickr-img6.webp" alt=""></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</aside> 
+            </div> 
+    
+            <div class="lightbox">
+   <div class="lightbox-content">
+         <img src="" alt="">
+      <div class="close-modal lightbox-close">
+         <svg><use xlink:href="img/dist/svg-sprite.svg#icon-close"></use></svg>
+      </div>
+   </div>
+
+   <div class="lightbox-overlay"></div>
+</div>
+        </div>
+        
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <!-- <script src="lib/jQuery-1.12.4.min.js"></script> -->
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="lib/my-scroll-animate.js"></script>
+        <script src="lib/counter.js"></script>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

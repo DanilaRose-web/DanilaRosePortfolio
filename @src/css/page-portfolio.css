@@ -1,0 +1,182 @@
+.page-portfolio {
+   background: url('../img/dist/portfolio/portfolio-bg9.webp') no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+   transition: all 0.5s ease;
+}
+
+.portfolio-content {
+   padding: 0;
+   background: transparent;
+}
+
+
+
+
+.portfolio-row {
+   /* margin: 0 -10px; */
+   margin-top: 40px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.portfolio-col {
+   /* margin-bottom: 20px; */
+   /* padding: 0 10px; */
+   display: flex;
+   flex: 0 0 33.3333%;
+   max-width: 33.3333%;
+}
+/*  */
+.portfolio-item {
+   width: 100%;
+   position: relative;
+}
+
+.portfolio-item::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(27, 27, 27, 0.5);
+   opacity: 1;
+   visibility: visible;
+   transition: all 0.3s ease;
+}
+
+.portfolio-item::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   border: 10px solid #01bab0;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(1.05);
+   transition: all 0.4s ease-out;
+}
+
+.portfolio-item img {
+   max-width: 100%;
+   height: auto;
+}
+
+.portfolio-item:hover::before {
+   opacity: 0;
+   visibility: hidden;
+}
+
+.portfolio-item:hover::after {
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1);
+}
+
+
+
+/* hover-block */
+.hover-block {
+   padding: 10px 20px;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   z-index: 5;
+   opacity: 0;
+   visibility: visible;
+   transition: all 0.3s ease-out;
+}
+
+.portfolio-item-category {
+   padding-bottom: 7px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 100%;
+   color: #fff;
+   text-align: center;
+   transform: translateX(10px);
+   display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+   transition: all 0.3s ease-out;
+   
+}
+
+.portfolio-item-name {
+   font-family: 'Roboto', sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 120%;
+   color: #fff;
+   text-align: center;
+   transform: translateX(-10px);
+   display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+   transition: all 0.3s ease-out;
+}
+
+.portfolio-item:hover .hover-block {
+   opacity: 1;
+   visibility: visible;
+}
+
+.portfolio-item:hover .portfolio-item-category {
+   transform: translateX(0);
+}
+
+.portfolio-item:hover .portfolio-item-name {
+   transform: translateX(-0);
+}
+
+@media all and (max-width: 1400px) {
+   .portfolio-item-name  { font-size: 24px; }
+}
+
+@media all and (max-width: 1290px) {
+   .portfolio-item-name  { font-size: 25px; }
+   .portfolio-col { flex: 0 0 50%; max-width: 50%; }
+}
+
+@media all and (max-width: 1065px) {
+   .page-resize.one-column .portfolio-item-name { font-size: calc((100vw - 870px)/(1065 - 870) * (25 - 15) + 15px); }
+   .page-resize.one-column .portfolio-item-category { font-size: calc((100vw - 870px)/(1065 - 870) * (13 - 12) + 12px); }
+}
+
+@media all and (max-width: 870px) {
+   .portfolio-item-name  { font-size: calc((100vw - 600px)/(870 - 600) * (25 - 17) + 17px); }
+   .portfolio-item-category { font-size: 13px; }
+}
+
+@media all and (max-width: 600px) {
+   .portfolio-item-name  { font-size: calc((100vw - 500px)/(600 - 500) * (17 - 15) + 15px); }
+   .portfolio-item-category { font-size: calc((100vw - 500px)/(600 - 500) * (13 - 11) + 11px); }
+}
+
+@media all and (max-width: 500px) {
+   .portfolio-col { flex: 0 0 100%; max-width: 100%; }
+   .hover-block { padding: 10px 20px; }
+   .portfolio-item-name  { font-size: calc((100vw - 280px)/(500 - 280) * (30 - 17) + 17px); }
+   .portfolio-item-category { font-size: calc((100vw - 280px)/(500 - 280) * (13 - 11) + 11px); }
+}
+
+@media all and (max-width: 400px) {
+   .hover-block { padding: 10px 15px; }
+}
+
+@media all and (min-width: 1800px) {
+   .portfolio-item-name { font-size: 27px; }
+   .portfolio-item-category { font-size: 14px; }
+}

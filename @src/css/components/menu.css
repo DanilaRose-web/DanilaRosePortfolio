@@ -1,0 +1,231 @@
+.menu {
+   margin-right: 80px;
+   background: rgba(0, 0, 0, 0.92);
+   position: relative;
+   z-index: 2;
+   max-width: 250px;
+   min-width: 250px;
+   max-height: 820px;
+   height: 100%;
+   overflow-y: hidden;
+   position: fixed;
+   top: 60px;
+   left: 60px;
+   width: 100%;
+   transition: all 0.5s cubic-bezier(.16,.68,.18,1);
+}
+
+.menu.active {
+   left: 60px;
+   transition: all 0.5s cubic-bezier(.16,.68,.18,1);
+}
+
+.menu.fixed {
+   position: fixed;
+   left: 60px;
+   /* max-height: 745px; */
+   transition: all 0.5s cubic-bezier(.16,.68,.18,1);
+}
+
+.menu-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+}
+
+/* logo */
+.logo {
+   padding: 30px;
+   /* margin-bottom: 30px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo-img {
+   max-width: 165px;
+}
+.logo-img img {
+   max-width: 100%;
+   height: auto;
+}
+
+/* menu */
+.menu-list {
+   margin-bottom: 198px;
+   width: 100%;
+   flex: 1 1 auto;
+}
+
+.menu-list > li:not(:last-child) {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-list__1 > li, 
+.menu-list__2 > li {
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-list > li > a, 
+.menu-list__1 > li > a, 
+.menu-list__2 > li > a {
+   position: relative;
+   padding: 12px 30px;
+   display: block;
+   color: #898989;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 120%;
+   transition: all 0.3s ease-out;
+}
+
+.menu-list__1 > li > a,
+.menu-list__2 > li > a {
+   padding: 12px 15px 12px 35px;
+}
+
+.menu-list__2 > li > a {
+   padding: 12px 15px 12px 40px;
+}
+
+
+.menu-list > li a:hover, .menu-list__1 > li > a:hover, .menu-list__2 > li > a:hover
+.menu-list > li > a.active,
+.menu-list li.has-children.active > a {
+   color: #01bab0;
+}
+
+.menu-list > li a::after, 
+.menu-list__1 > li > a::after, 
+.menu-list__2 > li > a::after {
+   content: '';
+   position: absolute;
+   left: 30px;
+   top: 0;
+   width: 3px;
+   height: 100%;
+   background: #01bab0;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 2;
+   transition: all 0.3s ease-out;
+}
+
+.menu-list > li a:hover::after, .menu-list__1 > li > a:hover::after, .menu-list__2 > li > a:hover::after,
+.menu-list li.has-children.active > a::after, .menu-list > li > a.active::after {
+   left: 0;
+   opacity: 1;
+   visibility: visible;
+}
+
+
+
+
+/* стрелка пункта меню с вложенным списком */
+.menu-list li.has-children {
+   position: relative;
+}
+
+.menu-list li.has-children::after,
+.menu-list li.has-children::before {
+   content: '';
+   width: 7px;
+   height: 1px;
+   background-color: #898989;
+   position: absolute;
+   top: 19px;
+   cursor: pointer;
+   transition: all 0.4s ease;
+}
+.menu-list li.has-children::before {
+   transform: rotate(40deg);
+   right: 25px;
+}
+.menu-list li.has-children::after {
+   transform: rotate(-40deg);
+   right: 20px;
+}
+.menu-list li.has-children.active::before {
+   transform: rotate(-40deg);
+   background-color: #01bab0;
+}
+.menu-list li.has-children.active::after {
+   transform: rotate(40deg);
+   background-color: #01bab0;
+}
+
+
+
+
+/* social widget */
+.social-widget {
+   display: flex;
+   align-items: center;
+}
+
+.social-widget a {
+   display: flex;
+   max-width: 20px;
+}
+
+.social-widget a:not(:last-child) {
+   margin-right: 15px;
+}
+
+.social-widget a svg {
+   fill: #898989;
+   width: 20px;
+   height: 20px;
+   transition: all 0.3s ease-out;
+}
+
+.social-widget a:hover svg {
+   fill: #01bab0;
+}
+
+
+
+/* copyright */
+.copyright {
+   padding: 30px 30px 40px 30px;
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 140%;
+   color: #555555;
+   text-align: center;
+}
+
+.copyright a {
+   color: white;
+   font-family: 'TT Norms', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+}
+
+@media all and (max-width: 1200px) {
+   .menu.fixed, .menu { left: -250px; }
+   .menu.active { left: 60px; }
+}
+
+@media all and (max-height: 910px) {
+   /* .menu, .menu.fixed { max-height: calc((100vh - 500px)/(910 - 500) * (745 - 500) + 500px); } */
+   /* .menu-list { margin-bottom: calc((100vh - 500px)/(910 - 500) * (100 - 70) + 70px); } */
+}
+
+@media all and (max-width: 870px) {
+   .menu { z-index: 3; }
+}
+
+@media all and (max-height: 720px) {
+   .menu, .menu.fixed { overflow-y: hidden; }
+}
+
+@media all and (max-width: 580px) {
+   .menu { top: 105px; }
+   .menu.active { left: 30px; }
+}
+
+@media all and (max-width: 400px) {
+   .menu.active { left: 0; }
+}

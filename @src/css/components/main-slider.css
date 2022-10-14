@@ -1,0 +1,369 @@
+/* slider-for */
+.slider-wrap, .main-slider-for, .slide {
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.bg-pattern {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url('../img/dist/bg_pattern.webp') repeat center;
+   z-index: 2;
+}
+
+/* счетчик слайдера */
+.slider-counter {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   font-family: 'Fjalla One';
+   letter-spacing: 0.5px;
+   transform: translateY(-50%);
+}
+
+.slider-counter span {
+   margin: 0 5px;
+   display: flex;
+}
+
+.slider-numbers {
+   color: white;
+   font-size: 20px;
+   font-weight: 600;
+   transition: all 0.2s ease-out;
+}
+
+/* slick-arrows */
+.slick-arrows {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   top: 70%;
+   right: 15%;
+   z-index: 2;
+}
+
+.main-prev, .main-next {
+   width: 45px;
+   height: 45px;
+   cursor: pointer;
+   color: #FFF;
+   background-color: rgba(26, 26, 26, 0.15);
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+   position: initial;
+   line-height: 0;
+   transition: all 0.2s ease-out;
+}
+
+.main-prev:hover, .main-next:hover {
+   background: #01bab0;
+}
+
+.main-prev::before, .main-next::before {
+   display: none;
+}
+
+.main-prev svg, .main-next svg {
+   fill: white;
+   width: 20px;
+   height: 20px;
+   transition: all 0.2s ease-out;
+}
+
+.main-prev {
+   margin-right: 10px;
+}
+
+
+/* slick dots */
+.main-slider-for .slick-dots {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: max-content;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 15%;
+}
+
+.main-slider-for .slick-dots li {
+   margin: 5px;
+   background: #fff;
+}
+
+.main-slider-for .slick-dots li, .slick-dots li button {
+   border-radius: 50%;
+   line-height: 0;
+   width: 12px;
+   height: 12px;
+   background-color: transparent;
+   color: transparent;
+   opacity: 0.5;
+   transition: all 0.2s ease-out;
+}
+
+.main-slider-for .slick-dots li button::before {
+   content: '';
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+   background: #fff;
+   opacity: 1;
+   transition: all 0.2s ease-out;
+}
+
+.main-slider-for .slick-dots li:hover {
+   opacity: 0.8;
+}
+
+.main-slider-for .slick-dots li.slick-active {
+   opacity: 1;
+}
+
+
+
+
+
+.main-slider-for .slide {
+   max-width: 100%;
+   width: 100%;
+   height: 100%;
+   position: relative;
+}
+
+.slide img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.main-slider-for .slick-list.draggable, 
+.main-slider-for .slick-list.draggable .slick-track,
+.main-slider-for .slick-slide > div {
+   height: 100%;
+}
+
+.main-slider-for .slick-list.draggable .slick-track {
+   overflow: hidden;
+}
+
+
+
+/* slider-nav */
+.main-slider-nav {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   max-height: 115px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   background-color: rgba(0, 0, 0, 0.35)
+}
+
+.main-slider-nav .slide img {
+   opacity: 0.5;
+   transition: all 0.3s ease-out;
+}
+
+.main-slider-nav .slide,
+.main-slider-nav .slick-slide {
+   max-width: 165px;
+   width: 100%;
+   position: relative;
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+
+.main-slider-nav .slide:hover img {
+   opacity: 1;
+}
+.main-slider-nav .slide:hover::after {
+   opacity: 0;
+}
+
+.main-slider-nav .slick-slide {
+   margin: 0 5px;
+   display: flex;
+   align-items: center;
+}
+
+.main-slider-nav .slick-track {
+   display: flex;
+   justify-content: flex-end;
+}
+.main-slider-nav .slick-list.draggable,
+.main-slider-nav .slick-track {
+   height: 100%;
+   align-items: center;
+}
+
+.slick-list {
+   overflow: visible;
+   overflow-x: hidden;
+}
+
+/* стили текущего слайда в main-slider-nav */
+.main-slider-nav .slide::before {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border: 4px #01bab0 solid;
+   opacity: 0;
+   transform: scale(1.2);
+   transition: all 0.3s ease-out;
+}
+
+.main-slider-nav .slick-slide.slick-current .slide::before {
+   opacity: 1;
+   transform: scale(1);
+}
+
+.main-slider-nav .slick-slide.slick-current .slide img {
+   opacity: 1;
+}
+
+.main-slider-nav .slick-slide.slick-current .slide::after {
+   opacity: 0;
+}
+
+
+
+
+
+/* Общие стили для слайдеров */
+/* .main-slider-for .slide::after, 
+.main-slider-nav .slide::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url('../img/dist/bg_pattern.webp') repeat center;
+   z-index: 1;
+   opacity: 1;
+   transition: all 0.3s ease-out;
+} */
+
+
+
+/* текст слайда */
+.slide-content-wrap {
+   /* position: absolute; */
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   display: flex;
+   overflow: auto;
+   transition: all 0.3s ease-out;
+}
+
+.slide-content {
+   margin: 0 auto;
+   margin-left: 400px;
+   margin-bottom: 20px;
+   padding-right: 15px;
+   max-width: 900px;
+   width: 100%;
+   position: relative;
+   z-index: 5;
+   transition: all 0.3s ease-out;
+}
+
+/* titles */
+.main-md-title {
+   font-size: 80px;
+   font-weight: normal;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-family: 'Fjalla One', sans-serif;
+   text-transform: uppercase;
+   line-height: 110%;
+   color: white;
+}
+
+.main-xl-title {
+   margin-bottom: 10px;
+   font-size: 107px;
+   font-family: 'Fjalla One', sans-serif;
+   text-transform: uppercase;
+   line-height: 120%;
+}
+
+.main-xxl-title {
+   font-size: 189px;
+   font-family: 'Fjalla One', sans-serif;
+   font-weight: normal;
+   line-height: 100%;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+.colorfull-title {
+   color: #01bab0;
+}
+
+.main-lg-subtitle, .main-xl-subtitle {
+   font-size: 48px;
+   font-family: 'Fjalla One', sans-serif;
+   font-weight: normal;
+   line-height: 100%;
+   text-transform: uppercase;
+}
+
+.main-xl-subtitle {
+   font-size: 57px;
+}
+
+.main-text {
+   font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+@media all and (min-width: 1920px) {
+   .slide-content { margin: 0 auto; max-width: 1200px; }
+}
+
+@media all and (max-width: 1630px) {
+   .main-slider-for .slick-dots { right: 3%; }
+   .slider-wrap .slick-arrows { right: 3%; }
+}
+
+@media all and (max-width: 1200px) {
+   .slide-content { margin-left: 170px; }
+}
+
+@media all and (max-width: 840px) {
+   .main-slider-nav { display: none; }
+}
+
+@media all and (max-height: 800px) {
+   .main-slider-nav { display: none; }
+}
+
+@media all and (max-height: 650px) {
+   .main-slider-for .slick-list.draggable, 
+   .main-slider-for .slick-list.draggable .slick-track,
+   .main-slider-for .slick-slide > div { height: inherit; }
+}

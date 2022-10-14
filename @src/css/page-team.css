@@ -1,0 +1,351 @@
+.page-team {
+   background: url('../img/dist/team/team-bg.webp') no-repeat center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.team-content {
+   padding: 0;
+   background: transparent;
+}
+
+
+
+
+/* team-item-single */
+.team-item-single {
+   display: flex;
+   align-items: center;
+}
+
+.page-team.active .team-item-single {
+   flex-direction: column;
+   align-items: center;
+}
+
+.page-team.active .team-description {
+   margin-right: 0;
+   flex: 1 1 100%;
+   max-width: 100%;
+   transition: all 0.3s ease-in-out;
+}
+
+.page-team.active .team-photo {
+   flex: 1 1 100%;
+   max-width: 100%;
+   transition: all 0.3s ease-in-out;
+}
+
+.team-description {
+    margin-bottom: 30px;
+   margin-right: 40px;
+   flex: 1 1 60%;
+   max-width: 60%;
+}
+
+.team-item-info {
+   margin-bottom: 40px;
+   display: flex;
+   align-items: flex-end;
+}
+
+.team-item-info .name {
+   margin-right: 20px;
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 60px;
+   line-height: 100%;
+   color: white;
+}
+
+.team-item-info .profession {
+   font-family: 'Roboto', sans-serif;
+   font-style: italic;
+   font-size: 22px;
+   font-weight: 900;
+   line-height: 100%;
+   color: white;
+   white-space: nowrap;
+}
+
+
+
+
+
+.team-item-description {
+   margin-bottom: 40px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 125%;
+   color: white;
+}
+
+
+
+.team-item-contact {
+   display: flex;
+   align-items: center;
+}
+
+.team-social {
+   margin-right: 17px;
+   display: flex;
+   align-items: center;
+}
+
+.team-social a {
+   display: inline-block;
+   height: 24px;
+}
+
+.team-social a:not(:last-child) {
+   margin-right: 13px;
+}
+
+.team-social svg {
+   fill: #fff;
+   width: 24px;
+   height: 24px;
+   transition: all 0.2s ease-in-out;
+}
+
+.team-social a:hover svg {
+   fill: #01bab0;
+}
+
+
+.message-btn {
+   padding: 6px 17px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #01bab0;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   color: #fff;
+   transition: all 0.3s ease-in-out;
+}
+
+.message-btn svg {
+   margin-right: 10px;
+   fill: #fff;
+   width: 24px;
+   height: 24px;
+   transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+/* team-photo */
+.team-photo {
+   margin-bottom: 30px;
+   max-width: 40%;
+   flex: 1 1 40%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.team-photo .photo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 370px;
+   position: relative;
+   /* overflow: hidden; */
+}
+
+.team-photo .photo::after  {
+   content: '';
+   position: absolute;
+   top: -15px;
+   right: -15px;
+   bottom: -15px;
+   left: -15px;
+   background: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   z-index: 0;
+   transition: all 0.2s ease-in-out;
+}
+
+.team-photo .photo img {
+   width: 100%;
+   max-width: 370px;
+   height: auto;
+   border-radius: 50%;
+   position: relative;
+   z-index: 1;
+}
+
+
+
+
+
+
+
+
+/* все члены команды */
+.team-all {
+   margin: 0 -15px;
+   margin-top: 60px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.team-item-col {
+   margin-bottom: 15px;
+   padding: 0 15px;
+   display: flex;
+   flex: 1 1 190px;
+   max-width: 190px;
+   width: 100%;
+}
+
+.team-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   position: relative;
+   cursor: pointer;
+}
+
+.team-item-name {
+   margin-top: 14px;
+   padding: 8px 15px;
+   background: rgba(0, 0, 0, 0.7);
+   border-radius: 5px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 100%;
+   position: relative;
+   color: #fff;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(10px);
+   transition: all 0.3s ease-in-out;
+}
+
+.team-item-name::after {
+   content: '';
+   position: absolute;
+   top: -9px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-bottom: 9px solid rgba(0, 0, 0, 0.7);
+   border-left: 9px solid transparent;
+   border-right: 9px solid transparent;
+}
+
+.team-item .photo-small {
+   width: 100%;
+   border-radius: 50%;
+   max-width: 170px;
+}
+
+.team-item .photo-small img {
+   border-radius: 50%;
+   max-width: 100%;
+   height: auto;
+}
+
+.team-item:hover .team-item-name {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+}
+
+
+
+
+
+
+@media all and (min-width: 1351px) {
+   .page-team.active .team-item-single { flex-direction: row; }
+}
+
+@media all and (max-width: 992px) {
+   .team-item-single { flex-direction: column; align-items: center; }
+   .page-team.active .team-description, .page-team .team-description { flex: 1 1 100%; max-width: 100%; margin-right: 0; }
+   .page-team.active .team-photo, .page-team .team-photo { flex: 1 1 100%; max-width: 100%; }
+}
+
+@media all and (max-width: 370px) {
+   .team-item-contact { flex-direction: column; align-items: flex-start; }
+   .message-btn { max-width: 100%; width: 100%; margin-top: 10px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hovers classes */
+.team-hover, .team-small-hover {
+   position: relative;
+}
+
+.team-hover::after, .team-small-hover::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: rgba(255, 255, 255, 0.2);
+   border-radius: 50%;
+   opacity: 0;
+   z-index: -1;
+   transition: all 0.2s ease-out;
+}
+
+.team-hover::before, .team-small-hover::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background: rgba(0, 0, 0, 0.5);
+   opacity: 1;
+   z-index: 2;
+   transition: all 0.2s ease-out;
+}
+
+.team-hover:hover::after {
+   top: -15px;
+   right: -15px;
+   bottom: -15px;
+   left: -15px;
+   opacity: 1;
+}
+
+.team-small-hover:hover::after {
+   top: -10px;
+   right: -10px;
+   bottom: -10px;
+   left: -10px;
+   opacity: 1;
+}
+
+.team-hover:hover::before, .team-small-hover:hover::before {
+   transform: scale(0.9);
+   opacity: 0;
+}

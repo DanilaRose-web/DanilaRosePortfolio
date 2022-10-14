@@ -1,0 +1,68 @@
+/* circles */
+.circle-col {
+   margin-bottom: 30px;
+}
+
+.circle {
+   text-align: center;
+   max-width: 195px;
+}
+
+.circle-wrap {
+   position: relative;
+}
+
+.circle svg {
+   transform: rotate(-90deg);
+}
+
+.percent-wrap {
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   -ms-flex-pack: center;
+   justify-content: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+
+.percent {
+   display: flex;
+   align-items: center;
+   transition: all 1.5s cubic-bezier(.82,0,.19,1);
+}
+
+.percent span {
+   margin-top: 10px;
+   font-weight: 600;
+   color: #fff;
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 48px;
+   line-height: 120%;
+   display: flex;
+}
+
+.progress-circle {
+   stroke-dasharray: 0, 100;
+   transition: all 1.5s cubic-bezier(.82,0,.19,1);
+   stroke-linecap: butt;
+}
+
+.circle-info {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+@media all and (max-width: 460px) {
+   .circle-col { max-width: 100%; flex: 0 0 100%; display: flex; justify-content: center; }
+   .circle { max-width: 300px; width: 100%; }
+}
